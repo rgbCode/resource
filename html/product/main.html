@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/resource/libs/mdl/font/material-icons.css">
+	<link rel="stylesheet" type="text/css" href="/resource/libs/mdl/material.indigo-pink.min.css">
+
+    <script src="/resource/libs/mdl/material.min.js"></script>
+    <script src="/resource/libs/jquery/jquery-3.2.1.slim.min.js"></script>
+    <script src="/resource/libs/utils/underscore-min.js"></script>
+
+	<title>test</title>
+<style>
+.mdl-card {min-height:20px}
+.mdl-grid .mdl-cell{text-align:center; color:#777;}
+.mdl-grid .mdl-cell .icons-text {font-size:12px;}
+</style>
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+	<header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+			<span class="mdl-layout-title">Title</span>
+			<div class="mdl-layout-spacer"></div>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+				<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+				<i class="material-icons">search</i>
+				</label>
+				<div class="mdl-textfield__expandable-holder">
+				<input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="mdl-layout__drawer">
+		<span class="mdl-layout-title">Title</span>
+		<nav class="mdl-navigation">
+			<a class="mdl-navigation__link" href="">Link</a>
+			<a class="mdl-navigation__link" href="">Link</a>
+			<a class="mdl-navigation__link" href="">Link</a>
+			<a class="mdl-navigation__link" href="">Link</a>
+		</nav>
+	</div>
+
+	<main class="mdl-layout__content">
+		<div class="page-content">
+
+			<div style="padding:10px">
+				<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+				<colgroup>
+					<col width="100px"/>
+					<col/>
+					<col width="100px"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="mdl-data-table__cell--non-numeric">Material</th>
+						<th class="mdl-data-table__cell--non-numeric">Quantity</th>
+						<th>Unit price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="padding:4px; text-align:center;">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" style="width:80px;height:80px;">
+						</td>
+						<td class="mdl-data-table__cell--non-numeric">250</td>
+						<td>$2.90</td>
+					</tr>
+					<tr>
+						<td style="padding:4px; text-align:center;">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" style="width:80px;height:80px;">
+						</td>
+						<td class="mdl-data-table__cell--non-numeric">50</td>
+						<td>$1.25</td>
+					</tr>
+					<tr>
+						<td style="padding:4px; text-align:center;">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" style="width:80px;height:80px;">
+						</td>
+						<td class="mdl-data-table__cell--non-numeric">10</td>
+						<td>$12.35</td>
+					</tr>
+				</tbody>
+				</table>			
+			</div>
+
+		</div>
+	</main>
+
+	<footer class="mdl-mini-footer">
+		<div class="mdl-mini-footer__left-section">
+			<div class="mdl-logo">Title</div>
+			<ul class="mdl-mini-footer__link-list">
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Privacy & Terms</a></li>
+			</ul>
+		</div>
+	</footer>	
+</div>
+
+</body>
+</html>
