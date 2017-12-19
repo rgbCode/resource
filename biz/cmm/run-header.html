@@ -1,0 +1,23 @@
+<div class="mdl-layout__header-row">
+	<span class="mdl-layout-title" data-bind="text:title">subject</span>
+	<!-- ko if:navis().length > 0 -->
+	<nav class="mdl-navigation mdl-cell--hide-phone" data-bind="foreach:navis">
+		<a class="mdl-navigation__link" data-bind="text:$data.text, click:$data.event">link</a>
+	</nav>
+	<!-- /ko -->
+	<div class="mdl-layout-spacer"></div>
+	<button class="mdl-button mdl-js-button mdl-button--icon" data-bind="click:auth">
+		<i class="material-icons">
+		<!-- ko if:login -->account_circle<!-- /ko -->
+		<!-- ko ifnot:login -->power_settings_new<!-- /ko -->
+		</i>
+	</button>
+	<!-- ko if:navis().length > 0 -->
+	<button id="head-menu" class="mdl-button mdl-js-button mdl-button--icon mdl-cell--hide-desktop">
+		<i class="material-icons">more_vert</i>
+	</button>
+	<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="head-menu" data-bind="foreach:navis">
+		<li class="mdl-menu__item" data-bind="text:$data.text, click:$data.event">Some Action</li>
+	</ul>
+	<!-- /ko -->
+</div>

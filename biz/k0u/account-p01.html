@@ -1,0 +1,36 @@
+	<div class="mdl-card mdl-shadow--2dp" style="width:100%;">
+		<div class="mdl-card__actions">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--6-col">
+					<label class="mdl-radio mdl-js-radio">
+						<input type="radio" class="mdl-radio__button" name="addInout" value="1">
+						<span class="mdl-radio__label">입금</span>
+					</label>
+					<label class="mdl-radio mdl-js-radio">
+						<input type="radio" class="mdl-radio__button" name="addInout" value="2">
+						<span class="mdl-radio__label">출금</span>
+					</label>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100%;">
+						<input type="tel" class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?">
+						<label class="mdl-textfield__label">금액</label>
+						<span class="mdl-textfield__error">input error</span>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--6-col">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100%;">
+						<textarea class="mdl-textfield__input" rows="5"></textarea>
+						<label class="mdl-textfield__label">내용</label>
+						<span class="mdl-textfield__error">input error</span>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--12-col" style="text-align:right;">
+					<button class="mdl-button mdl-js-button mdl-button--accent mdl-button--icon">
+						<i class="material-icons">check</i>
+					</button>
+					<button class="mdl-button mdl-js-button mdl-button--colored mdl-button--icon" data-bind="click:close">
+						<i class="material-icons">close</i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>

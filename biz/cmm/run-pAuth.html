@@ -1,0 +1,51 @@
+<div class="mdl-card" style="width:100%;">
+	<div class="mdl-card__actions">
+		<!-- ko if:isJoin() == false -->
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--12-col">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100%;">
+					<input type="text" class="mdl-textfield__input">
+					<label class="mdl-textfield__label">id(email)</label>
+				</div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100%;">
+					<input type="text" class="mdl-textfield__input">
+					<label class="mdl-textfield__label">password</label>
+				</div>
+				<div style="text-align:right;">
+					<button class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-bind="click:join">회원가입</button>
+					<button class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">로그인</button>
+				</div>
+			</div>
+
+			<div class="mdl-cell mdl-cell--12-col">
+				<button class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect" style="width:100%;">facebook</button>
+			</div>
+			<div class="mdl-cell mdl-cell--12-col">
+				<button class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect" style="width:100%;" data-bind="click:google">Google</button>
+			</div>
+		</div>
+		<!-- /ko -->
+
+		<!-- ko if:isJoin() == true -->
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--12-col">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100%;">
+					<input type="text" class="mdl-textfield__input">
+					<label class="mdl-textfield__label">name</label>
+				</div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100%;">
+					<input type="text" class="mdl-textfield__input">
+					<label class="mdl-textfield__label">id(email)</label>
+				</div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width:100%;">
+					<input type="text" class="mdl-textfield__input">
+					<label class="mdl-textfield__label">password</label>
+				</div>
+				<div style="text-align:right;">
+					<button class="mdl-button mdl-button--raised mdl-button--accent mdl-js-button mdl-js-ripple-effect">회원가입</button>
+				</div>
+			</div>
+		</div>
+		<!-- /ko -->
+	</div>
+</div>
