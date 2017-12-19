@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/resource/libs/mdl/font/material-icons.css">
+	<link rel="stylesheet" type="text/css" href="/resource/libs/mdl/material.indigo-pink.min.css">
+
+    <script src="/resource/libs/mdl/material.min.js"></script>
+    <script src="/resource/libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="/resource/libs/utils/underscore-min.js"></script>
+    <script src="/resource/libs/utils/knockout-3.4.2.js"></script>
+	
+	<title>test</title>
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+
+	<!-- content -->
+	<main class="mdl-layout__content">
+		<div class="page-content">
+	
+			<div style="padding:10px" data-bind-view="prodList">
+				<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:100%;">
+				<colgroup>
+					<col width="100px"/>
+					<col/>
+					<col width="100px"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="mdl-data-table__cell--non-numeric">Material</th>
+						<th class="mdl-data-table__cell--non-numeric">Quantity</th>
+						<th>Unit price</th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach:list">
+					<tr>
+						<td style="text-align:center;">
+							<img src="/resource/images/not-found.png" style="width:60px;height:60px;" data-bind="attr:{src:img}">
+						</td>
+						<td class="mdl-data-table__cell--non-numeric">
+							<span data-bind="text:name"></span>
+						</td>
+						<td>
+							<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" data-bind="click:$parent.order">
+								<i class="material-icons">shopping_cart</i>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+				</table>
+	
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top:12px; width:100%; font-weight:bold;" data-bind="click:more">더 보 기</button>
+				<div data-bind="html:dl" id="dldl"></div>
+			</div>
+
+		</div>
+	</main>
+	
+</div>
+
+<script src="/resource/libs/koapp.js"></script>
+<script src="/resource/biz/view/product/list.js"></script>
+</body>
+</html>
